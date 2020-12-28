@@ -1,6 +1,5 @@
 # Javascript Portfolio Project 1
 
-Plan the thing:
+## "Mixed messages"
 
-* inspiring messages
-  * beginning, middle, end
+This is a simple application which takes random pieces of sentences and puts them together to form a motivational message!

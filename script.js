@@ -1,4 +1,11 @@
-const beginning = ["You're going to ", "You have to ", "Get ready to ", "Show me how you "];
-const middle = ["kill it, ", "wreck it, ", "face God, ", "be the best you, ", "rock this, ", "balance it all, "];
-const end = ["today!", "you beast!", "for sure!", "or my name's Sally! (trust me, it's not)"];
+var json = require('./phrases.json');
 
+const getRandomPhrase = () => {
+    const b = json.beginning[Math.floor(Math.random() * json.beginning.length)];
+    const m = json.middle[Math.floor(Math.random() * json.middle.length)];
+    const e = json.end[Math.floor(Math.random() * json.end.length)];
+
+    return b + m + e;
+}
+
+console.log(getRandomPhrase());
